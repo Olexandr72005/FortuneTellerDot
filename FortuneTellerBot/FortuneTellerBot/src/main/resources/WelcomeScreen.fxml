@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="root"
+          prefHeight="500.0"
+          prefWidth="670.0"
+          stylesheets="@styles.css"
+          xmlns="http://javafx.com/javafx/17.0.2-ea"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.Bot.FortuneTellerBot.application.WelcomeScreenController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints percentWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="70" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="10" />
+    </rowConstraints>
+
+    <!-- Left region -->
+    <TableView fx:id="tableView"
+               styleClass="table-view"
+               AnchorPane.bottomAnchor="145.0"
+               AnchorPane.leftAnchor="10.0"
+               AnchorPane.rightAnchor="10.0"
+               AnchorPane.topAnchor="10.0"
+               GridPane.columnIndex="1"/>
+
+    <GridPane GridPane.columnIndex="1"
+              GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+        </columnConstraints>
+
+        <!-- Button region -->
+        <GridPane GridPane.columnIndex="0">
+
+            <rowConstraints>
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="90" />
+                <RowConstraints percentHeight="10" />
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="10" />
+                <ColumnConstraints percentWidth="80" />
+                <ColumnConstraints percentWidth="10" />
+            </columnConstraints>
+
+            <AnchorPane GridPane.columnIndex="1"
+                        GridPane.rowIndex="1">
+                <Button fx:id="addButton"
+                        styleClass="button-style"
+                        text="Додати"
+                        AnchorPane.bottomAnchor="0.0"
+                        AnchorPane.leftAnchor="0.0"
+                        AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+
+        </GridPane>
+
+        <GridPane GridPane.columnIndex="1">
+
+            <rowConstraints>
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="90" />
+                <RowConstraints percentHeight="10" />
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="10" />
+                <ColumnConstraints percentWidth="80" />
+                <ColumnConstraints percentWidth="10" />
+            </columnConstraints>
+
+            <AnchorPane GridPane.columnIndex="1"
+                        GridPane.rowIndex="1">
+                <Button fx:id="editButton"
+                        styleClass="button-style"
+                        text="Редагувати"
+                        AnchorPane.bottomAnchor="0.0"
+                        AnchorPane.leftAnchor="0.0"
+                        AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+
+        </GridPane>
+
+        <GridPane GridPane.columnIndex="2">
+            <rowConstraints>
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="90" />
+                <RowConstraints percentHeight="10" />
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="10" />
+                <ColumnConstraints percentWidth="80" />
+                <ColumnConstraints percentWidth="10" />
+            </columnConstraints>
+
+            <AnchorPane GridPane.columnIndex="1"
+                        GridPane.rowIndex="1"
+                        fx:id="anchorPane">
+                <Button fx:id="deleteButton"
+                        styleClass="button-style"
+                        text="Видалити"
+                        AnchorPane.bottomAnchor="0.0"
+                        AnchorPane.leftAnchor="0.0"
+                        AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+        </GridPane>
+
+        <GridPane GridPane.columnIndex="3">
+            <rowConstraints>
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="90" />
+                <RowConstraints percentHeight="10" />
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="10" />
+                <ColumnConstraints percentWidth="80" />
+                <ColumnConstraints percentWidth="10" />
+            </columnConstraints>
+            <AnchorPane GridPane.columnIndex="1"
+                        GridPane.rowIndex="1">
+                <ChoiceBox fx:id="choiceBox"
+                           AnchorPane.bottomAnchor="20.0"
+                           AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+        </GridPane>
+
+    </GridPane>
+
+    <GridPane alignment="CENTER"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="2">
+        <rowConstraints>
+            <RowConstraints percentHeight="20" />
+            <RowConstraints percentHeight="90" />
+            <RowConstraints percentHeight="10" />
+        </rowConstraints>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="10" />
+            <ColumnConstraints percentWidth="80" />
+            <ColumnConstraints percentWidth="10" />
+        </columnConstraints>
+
+        <HBox fx:id="textFieldContainer"
+              alignment="CENTER"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="1"
+              HBox.hgrow="ALWAYS"
+              VBox.vgrow="ALWAYS" />
+    </GridPane>
+</GridPane>

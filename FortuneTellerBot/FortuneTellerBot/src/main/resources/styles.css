@@ -1,0 +1,66 @@
+.root {
+    -purple: #f5e9f9;
+    -purple1: #d7a8e5;
+    -purple2: #b966d2;
+    -purple3: #6d1a85;
+    -purple4: #3e0f4c;
+}
+
+.button-style {
+
+    -fx-background-color: -purple3;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14pt;
+    -fx-font-family: "Candara Light";
+    -fx-cursor: hand;
+}
+
+.button-style:hover {
+    -fx-background-color: -purple4;
+}
+
+.label-style {
+    -fx-font-size: 14pt;
+    -fx-text-fill: -purple4;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-content-display: center;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: -purple1;
+    -fx-border-width: 3;
+    -fx-border-radius: 2pt;
+    -fx-text-fill: -purple4;
+    -fx-prompt-text-fill: -purple3;
+}
+
+.grid-pane-purple {
+    -fx-background-color: -purple;
+}
+
+.grid-pane-purple1 {
+    -fx-background-color: -purple1;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: -purple4;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-background-color: -purple;
+    -fx-border-color: -purple4;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #333333;
+}
+
+
